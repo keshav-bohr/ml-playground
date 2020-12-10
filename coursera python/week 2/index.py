@@ -2,9 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from gradientDescent import gradientDescent
+from computeCost import computeCost
 
 # load data into x and y
-data = np.loadtxt('./ex1data1.txt', delimiter=',')
+data = np.loadtxt('./coursera python/week 2/ex1data1.txt', delimiter=',')
 x, y = zip(*data)
 m = len(y)
 
@@ -21,4 +22,5 @@ alpha = 0.01
 
 
 theta = gradientDescent(X, y, theta, alpha, iterations)
-print(theta)
+J = computeCost(X, y, theta)
+print(J)

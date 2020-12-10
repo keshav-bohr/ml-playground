@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "coursera/week 2",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/coursera python/week 2/index.py",
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
